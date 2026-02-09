@@ -56,10 +56,16 @@ const Testimonials = () => {
             >
               <Quote size={28} className="text-giftyne-terra/10 mb-3" strokeWidth={1.5} />
 
-              <div className="flex gap-0.5 mb-3">
-                {Array.from({ length: t.rating }).map((_, j) => (
-                  <Star key={j} size={12} className="fill-amber-400 text-amber-400" />
-                ))}
+              <div className="flex items-center justify-between mb-3">
+                <div className="flex gap-0.5">
+                  {Array.from({ length: t.rating }).map((_, j) => (
+                    <Star key={j} size={12} className="fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+                <span className="inline-flex items-center gap-1 font-body text-[9px] text-green-600 bg-green-50 px-2 py-0.5 rounded-full font-medium">
+                  <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3"><path d="M20 6L9 17l-5-5"/></svg>
+                  Verified Buyer
+                </span>
               </div>
 
               <p className="font-body text-sm text-giftyne-text/60 leading-relaxed mb-5">
