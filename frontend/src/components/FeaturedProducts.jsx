@@ -11,6 +11,8 @@ const products = [
     image: "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=500&q=80",
     tag: "Bestseller",
     rating: 4.9,
+    reviews: 124,
+    stock: 8,
   },
   {
     id: 2,
@@ -21,6 +23,8 @@ const products = [
     image: "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=500&q=80",
     tag: "New",
     rating: 4.8,
+    reviews: 56,
+    stock: 15,
   },
   {
     id: 3,
@@ -31,6 +35,8 @@ const products = [
     image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=500&q=80",
     tag: null,
     rating: 5.0,
+    reviews: 89,
+    stock: 3,
   },
   {
     id: 4,
@@ -41,6 +47,8 @@ const products = [
     image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=500&q=80",
     tag: "Popular",
     rating: 4.9,
+    reviews: 201,
+    stock: 5,
   },
 ];
 
