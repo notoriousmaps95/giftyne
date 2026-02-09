@@ -3,11 +3,11 @@ import { Instagram as InstagramIcon } from "lucide-react";
 
 const images = [
   "https://images.unsplash.com/photo-1513885535751-8b9238bd345a?w=400&q=80",
-  "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=400&q=80",
-  "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=400&q=80",
-  "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&q=80",
   "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=400&q=80",
+  "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=400&q=80",
+  "https://images.unsplash.com/photo-1512909006721-3d6018887383?w=400&q=80",
   "https://images.unsplash.com/photo-1543934638-bd2e138430c4?w=400&q=80",
+  "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=400&q=80",
 ];
 
 const Instagram = () => (
