@@ -41,7 +41,7 @@ const categories = [
     id: 6,
     name: "Crochet Keychains",
     count: "16 Products",
-    image: "https://images.unsplash.com/photo-1578898395681-2b08d507801a?w=500&q=80",
+    image: "https://images.unsplash.com/photo-1543934638-bd2e138430c4?w=500&q=80",
     span: "md:col-span-2",
   },
 ];
