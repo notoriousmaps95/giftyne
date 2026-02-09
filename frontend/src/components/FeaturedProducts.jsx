@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Heart, ShoppingBag, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -13,6 +14,7 @@ const products = [
     rating: 4.9,
     reviews: 124,
     stock: 8,
+    slug: "flower-gift-wrapping-paper",
   },
   {
     id: 2,
@@ -25,6 +27,7 @@ const products = [
     rating: 4.8,
     reviews: 56,
     stock: 15,
+    slug: "stripes-gift-wrapping-paper",
   },
   {
     id: 3,
@@ -37,6 +40,7 @@ const products = [
     rating: 5.0,
     reviews: 89,
     stock: 3,
+    slug: "crochet-rose-bouquet",
   },
   {
     id: 4,
@@ -49,6 +53,7 @@ const products = [
     rating: 4.9,
     reviews: 201,
     stock: 5,
+    slug: "big-ear-bunny",
   },
 ];
 
