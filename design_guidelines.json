@@ -1,0 +1,134 @@
+{
+  "project_name": "Giftyne - Wrap Moments in Magic",
+  "design_system": {
+    "theme": "light",
+    "typography": {
+      "font_family": {
+        "heading": "Playfair Display, serif",
+        "body": "Manrope, sans-serif",
+        "accent": "La Belle Aurore, cursive"
+      },
+      "imports": [
+        "https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Manrope:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+      ],
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tight",
+        "h2": "text-4xl md:text-5xl font-semibold tracking-tight",
+        "h3": "text-2xl md:text-3xl font-medium",
+        "p": "text-base md:text-lg leading-relaxed text-muted-foreground",
+        "accent": "text-xl md:text-2xl text-primary font-accent transform -rotate-2"
+      }
+    },
+    "colors": {
+      "palette": {
+        "background": "#FDFBF7",
+        "foreground": "#2D2A26",
+        "primary": "#C66C49",
+        "primary_foreground": "#FFFFFF",
+        "secondary": "#E6D5B8",
+        "accent": "#7D8F69",
+        "muted": "#F2ECE4",
+        "border": "#E6D5B8",
+        "card": "#FFFFFF"
+      },
+      "tailwind_config": {
+        "extend": {
+          "colors": {
+            "giftyne-bg": "#FDFBF7",
+            "giftyne-text": "#2D2A26",
+            "giftyne-terra": "#C66C49",
+            "giftyne-sage": "#7D8F69",
+            "giftyne-sand": "#E6D5B8",
+            "giftyne-paper": "#FFFFFF"
+          },
+          "backgroundImage": {
+            "paper-texture": "url('https://www.transparenttextures.com/patterns/cream-paper.png')"
+          }
+        }
+      }
+    },
+    "effects": {
+      "shadows": {
+        "card": "0 4px 20px -2px rgba(198, 108, 73, 0.1)",
+        "floating": "0 20px 40px -4px rgba(45, 42, 38, 0.1)"
+      },
+      "radius": {
+        "default": "0.75rem",
+        "button": "9999px",
+        "card": "1rem"
+      }
+    }
+  },
+  "layout_strategy": {
+    "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+    "grid_system": "Use the 'Tetris' grid for marketing sections (asymmetrical). Use dense grids for product listings.",
+    "spacing": "Generous. Use py-20 or py-32 for section vertical padding.",
+    "alignment": "Left-aligned text for readability, but visually balanced with images on the right."
+  },
+  "assets": {
+    "images": {
+      "hero_bg": "https://giftyne.com/wp-content/uploads/2025/08/Frame-37519.jpeg",
+      "categories": {
+        "wrapping_paper": "https://giftyne.com/wp-content/uploads/2025/08/Frame-37528-1.jpeg",
+        "crochet_flowers": "https://images.unsplash.com/photo-1700171458554-46cfd3f2a87a?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "crochet_bouquets": "https://images.unsplash.com/photo-1762020378347-f8759272bb72?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "soft_toys": "https://images.unsplash.com/photo-1753370241593-9cc8c17d7434?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "crochet_bags": "https://images.unsplash.com/photo-1591463882502-6499eed0aded?crop=entropy&cs=srgb&fm=jpg&q=85",
+        "keychains": "https://images.unsplash.com/photo-1622906701019-fa70f6117e3d?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      "why_giftyne_icons": {
+        "hand_illustrated": "https://giftyne.com/wp-content/uploads/2025/08/craft-1.png",
+        "made_in_india": "https://giftyne.com/wp-content/uploads/2025/08/india.png",
+        "sustainable": "https://giftyne.com/wp-content/uploads/2025/08/recycle.png",
+        "customization": "https://giftyne.com/wp-content/uploads/2025/08/pencil-and-ruler-1.png"
+      }
+    },
+    "icons": "Use Lucide-react for UI icons (ShoppingBag, Menu, Heart, Star, ChevronRight, Mail, Instagram, Facebook)."
+  },
+  "components_instructions": {
+    "Hero": {
+      "style": "Split layout. Left: Typography with 'Playfair Display', Tagline in 'La Belle Aurore'. Right: Organic collage of images or a single hero image with 'torn paper' edge mask.",
+      "cta": "Pill-shaped button, Terracotta background, text-white, hover:scale-105 transition-transform."
+    },
+    "ProductCard": {
+      "style": "Clean white card on beige bg. Rounded corners. Image takes 70% height. Typography: Playfair for title, Manrope for price. 'Add to Cart' appears on hover.",
+      "interaction": "Scale up slightly on hover. Shadow increases."
+    },
+    "CategoryGrid": {
+      "style": "Bento/Tetris grid. Mix large and small squares. Each item is a link to the collection.",
+      "overlay": "Gradient overlay on hover with text reveal."
+    },
+    "Testimonials": {
+      "style": "Horizontal scroll or simple grid. Card style: 'Paper' texture background (off-white), Serif italic text for quote."
+    },
+    "Navbar": {
+      "style": "Floating, glassmorphism but warm (bg-white/80 backdrop-blur-md). Logo left, Nav links center, Icons (Cart/Search) right."
+    }
+  },
+  "universal_guidelines": [
+    "Use 'Playfair Display' for all Headings (h1, h2, h3).",
+    "Use 'Manrope' for all body text.",
+    "Use 'La Belle Aurore' for small accent notes, tags, or the 'Magic' keyword.",
+    "Do NOT use pure black (#000000). Use Charcoal (#2D2A26).",
+    "Do NOT use standard blue for links. Use Terracotta (#C66C49) or Sage (#7D8F69).",
+    "Add 'texture' where possible—grain or paper noise opacity 0.05.",
+    "Buttons should be rounded-full (pill shape) for a friendly, organic feel.",
+    "Images should have rounded corners (rounded-2xl) to match the soft aesthetic."
+  ],
+  "accessibility": {
+    "contrast": "Ensure text is #2D2A26 on #FDFBF7 (Passes AAA). White text on #C66C49 buttons.",
+    "interactive": "All buttons must have :focus-visible states with a ring offset.",
+    "motion": "Respect prefers-reduced-motion."
+  },
+  "instructions_to_main_agent": [
+    "1. INSTALL FONTS: Add the Google Fonts import to the head of index.html or top of index.css.",
+    "2. CONFIG TAILWIND: Update tailwind.config.js with the 'colors' and 'fontFamily' specified above.",
+    "3. BUILD HEADER: Create a responsive Navbar with the specified links.",
+    "4. BUILD HERO: Implementation 'Wrap Moments in Magic' with the mixed typography.",
+    "5. BUILD CATEGORIES: Use the image URLs provided in 'assets.images.categories'.",
+    "6. BUILD FEATURED: Use a mocked list of products with the specific Giftyne wrapping paper images found.",
+    "7. BUILD WHY SECTION: Use the extracted icon URLs.",
+    "8. BUILD FOOTER: Simple, elegant, large typography.",
+    "9. ANIMATION: Use 'framer-motion' for simple fade-ins (opacity: 0 -> 1, y: 20 -> 0) on scroll."
+  ]
+}
