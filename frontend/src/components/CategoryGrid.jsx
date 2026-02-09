@@ -27,7 +27,7 @@ const categories = [
     id: 4,
     name: "Crochet Soft Toys",
     count: "11 Products",
-    image: "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=500&q=80",
+    image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=500&q=80",
     span: "",
   },
   {
