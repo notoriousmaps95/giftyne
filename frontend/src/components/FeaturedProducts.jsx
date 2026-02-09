@@ -62,7 +62,13 @@ const ProductCard = ({ product, index }) => (
     className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer"
     style={{ boxShadow: "0 2px 16px -2px rgba(198, 108, 73, 0.06)" }}
   >
-    {product.tag && (
+    {product.stock <= 5 && (
+      <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 bg-red-500/90 backdrop-blur-sm text-white font-body text-[9px] font-bold px-2.5 py-1 rounded-full tracking-wide uppercase">
+        <span className="w-1 h-1 bg-white rounded-full animate-pulse" />
+        Only {product.stock} left
+      </span>
+    )}
+    {product.tag && product.stock > 5 && (
       <span className={`absolute top-3 left-3 z-10 font-body text-[10px] font-bold px-3 py-1 rounded-full tracking-wide uppercase ${
         product.tag === "Bestseller" ? "bg-giftyne-terra text-white" :
         product.tag === "New" ? "bg-giftyne-sage text-white" :
