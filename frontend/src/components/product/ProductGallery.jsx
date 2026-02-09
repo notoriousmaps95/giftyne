@@ -14,8 +14,8 @@ const ProductGallery = ({ images, productName }) => {
           <button
             key={i}
             data-testid={`gallery-thumb-${i}`}
-            onClick={() => setActiveIndex(i)}
-            className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border-2 transition-all duration-200 ${
+            onClick={(e) => { e.preventDefault(); e.stopPropagation(); setActiveIndex(i); }}
+            className={`shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-xl overflow-hidden border-2 transition-all duration-200 cursor-pointer ${
               activeIndex === i ? "border-giftyne-terra shadow-md" : "border-giftyne-sand/40 hover:border-giftyne-sand"
             }`}
           >
