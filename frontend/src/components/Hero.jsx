@@ -122,7 +122,7 @@ const Hero = () => {
               <div className="col-span-5 flex flex-col gap-3 lg:gap-4 pt-10">
                 <div className="rounded-[1.5rem] overflow-hidden aspect-square shadow-xl shadow-giftyne-text/5">
                   <img
-                    src="https://images.unsplash.com/photo-1607469256872-48b65e1eafe0?w=500&q=80"
+                    src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=500&q=80"
                     alt="Wrapped gifts"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-1000"
                   />
