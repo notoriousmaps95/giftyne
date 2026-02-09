@@ -38,7 +38,7 @@ const products = [
     subtitle: "Handcrafted with love",
     price: 899,
     originalPrice: null,
-    image: "https://images.unsplash.com/photo-1559715541-5daf8a0296d0?w=500&q=80",
+    image: "https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?w=500&q=80",
     tag: "Popular",
     rating: 4.9,
   },
