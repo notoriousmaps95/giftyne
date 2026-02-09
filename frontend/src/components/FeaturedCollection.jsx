@@ -15,7 +15,7 @@ const FeaturedCollection = () => {
         >
           {/* Background image */}
           <img
-            src="https://images.unsplash.com/photo-1549465220-1a8b9238f78e?w=1200&q=80"
+            src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=1200&q=80"
             alt="Crochet collection"
             className="absolute inset-0 w-full h-full object-cover opacity-40"
           />
