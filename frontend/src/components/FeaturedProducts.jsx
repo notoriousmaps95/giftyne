@@ -129,6 +129,7 @@ const ProductCard = ({ product, index }) => (
         )}
       </div>
     </div>
+    </Link>
   </motion.div>
 );
 
