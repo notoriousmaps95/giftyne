@@ -1,43 +1,49 @@
 import { motion } from "framer-motion";
-import { Star } from "lucide-react";
+import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
     id: 1,
     name: "Priya Sharma",
-    text: "The wrapping papers are absolutely stunning! Every gift I wrapped became the center of attention. The quality and print are top-notch.",
+    text: "The wrapping papers are absolutely stunning! Every gift I wrapped became the center of attention. The quality and print are top-notch. My friends keep asking where I get them from!",
     rating: 5,
     location: "Mumbai",
+    product: "Floral Bloom Wrapping Paper",
+    avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80",
   },
   {
     id: 2,
     name: "Ananya Gupta",
-    text: "I ordered a crochet bouquet for my mom's birthday and she was beyond thrilled. The craftsmanship is incredible — you can tell it's made with love!",
+    text: "I ordered a crochet bouquet for my mom's birthday and she was beyond thrilled. The craftsmanship is incredible — you can tell every petal was made with love and care.",
     rating: 5,
     location: "Bangalore",
+    product: "Crochet Rose Bouquet",
+    avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80",
   },
   {
     id: 3,
     name: "Ritu Mehta",
-    text: "Giftyne's keychains are the cutest! I bought the capybara one for my friend and she hasn't stopped showing it off. Will definitely order again.",
+    text: "Giftyne's keychains are the cutest! I bought the capybara one for my friend and she hasn't stopped showing it off. The quality is amazing for the price. Will definitely order again!",
     rating: 5,
     location: "Delhi",
+    product: "Capybara Keychain",
+    avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80",
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section data-testid="testimonials-section" className="py-24 bg-giftyne-muted/40 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-14">
-          <span className="font-accent text-lg text-giftyne-sage -rotate-2 inline-block mb-2">
-            love letters
+    <section data-testid="testimonials-section" className="py-20 lg:py-28 bg-giftyne-bg relative grain-overlay">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="text-center mb-12">
+          <span className="font-accent text-lg text-giftyne-sage inline-block mb-1">
+            love notes
           </span>
-          <h2 className="font-heading text-4xl md:text-5xl font-semibold text-giftyne-text tracking-tight">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-giftyne-text tracking-tight">
             What Our Customers Say
           </h2>
         </div>
-        <div className="grid md:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid md:grid-cols-3 gap-5 md:gap-6">
           {testimonials.map((t, i) => (
             <motion.div
               key={t.id}
@@ -45,37 +51,32 @@ const Testimonials = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.12 }}
-              className="bg-white rounded-2xl p-7 relative"
-              style={{ boxShadow: "0 4px 20px -4px rgba(45, 42, 38, 0.06)" }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="bg-white rounded-2xl p-6 relative border border-giftyne-sand/30 hover:shadow-lg hover:shadow-giftyne-terra/5 transition-all duration-300"
             >
-              {/* Quote mark */}
-              <span className="font-heading text-6xl text-giftyne-terra/15 absolute top-4 right-6 leading-none">
-                &ldquo;
-              </span>
+              <Quote size={28} className="text-giftyne-terra/10 mb-3" strokeWidth={1.5} />
 
-              <div className="flex gap-0.5 mb-4">
+              <div className="flex gap-0.5 mb-3">
                 {Array.from({ length: t.rating }).map((_, j) => (
-                  <Star
-                    key={j}
-                    size={14}
-                    className="fill-giftyne-terra text-giftyne-terra"
-                  />
+                  <Star key={j} size={12} className="fill-amber-400 text-amber-400" />
                 ))}
               </div>
-              <p className="font-body text-sm text-giftyne-text/70 leading-relaxed mb-6 italic">
+
+              <p className="font-body text-sm text-giftyne-text/60 leading-relaxed mb-5">
                 &ldquo;{t.text}&rdquo;
               </p>
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-giftyne-sage/20 flex items-center justify-center">
-                  <span className="font-heading text-sm font-bold text-giftyne-sage">
-                    {t.name.charAt(0)}
-                  </span>
+
+              <div className="pt-4 border-t border-giftyne-sand/30 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <img src={t.avatar} alt={t.name} className="w-9 h-9 rounded-full object-cover" />
+                  <div>
+                    <p className="font-body text-sm font-semibold text-giftyne-text">{t.name}</p>
+                    <p className="font-body text-[11px] text-giftyne-text/35">{t.location}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-body text-sm font-semibold text-giftyne-text">{t.name}</p>
-                  <p className="font-body text-xs text-giftyne-text/40">{t.location}</p>
-                </div>
+                <span className="font-body text-[10px] text-giftyne-terra/60 bg-giftyne-terra/5 px-2.5 py-1 rounded-full">
+                  {t.product}
+                </span>
               </div>
             </motion.div>
           ))}
