@@ -64,9 +64,10 @@ const ProductCard = ({ product, index }) => (
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true, margin: "-50px" }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="group relative bg-white rounded-2xl overflow-hidden cursor-pointer"
+    className="group relative bg-white rounded-2xl overflow-hidden"
     style={{ boxShadow: "0 2px 16px -2px rgba(198, 108, 73, 0.06)" }}
   >
+    <Link to={`/product/${product.slug}`} className="block cursor-pointer">
     {product.stock <= 5 && (
       <span className="absolute top-3 left-3 z-10 inline-flex items-center gap-1 bg-red-500/90 backdrop-blur-sm text-white font-body text-[9px] font-bold px-2.5 py-1 rounded-full tracking-wide uppercase">
         <span className="w-1 h-1 bg-white rounded-full animate-pulse" />
