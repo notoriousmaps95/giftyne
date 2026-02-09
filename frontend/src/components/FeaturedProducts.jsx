@@ -28,7 +28,7 @@ const products = [
     subtitle: "Handmade",
     price: 1299,
     originalPrice: 1599,
-    image: "https://images.unsplash.com/photo-1490750967868-88aa4f44baee?w=500&q=80",
+    image: "https://images.unsplash.com/photo-1561181286-d3fee7d55364?w=500&q=80",
     tag: null,
     rating: 5.0,
   },
