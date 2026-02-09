@@ -106,6 +106,7 @@ const ProductCard = ({ product, index }) => (
           <Star key={i} size={10} className="fill-amber-400 text-amber-400" />
         ))}
         <span className="font-body text-[10px] text-giftyne-text/40 ml-1">{product.rating}</span>
+        <span className="font-body text-[10px] text-giftyne-text/25 ml-0.5">({product.reviews})</span>
       </div>
       <h3 className="font-heading text-sm font-semibold text-giftyne-text leading-snug mb-0.5">
         {product.name}
