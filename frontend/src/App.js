@@ -16,6 +16,7 @@ import Instagram from "@/components/Instagram";
 import Footer from "@/components/Footer";
 import LiveNotification from "@/components/LiveNotification";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ProductPage from "@/components/ProductPage";
 
 const Home = () => {
   return (
