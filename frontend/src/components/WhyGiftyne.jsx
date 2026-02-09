@@ -44,7 +44,7 @@ const WhyGiftyne = () => {
             <div className="grid grid-cols-2 gap-3">
               <div className="rounded-2xl overflow-hidden aspect-[3/4] shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1607469256872-48b65e1eafe0?w=500&q=80"
+                  src="https://images.unsplash.com/photo-1512909006721-3d6018887383?w=500&q=80"
                   alt="Gift wrapping"
                   className="w-full h-full object-cover"
                 />
