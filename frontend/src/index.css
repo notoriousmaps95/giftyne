@@ -59,6 +59,15 @@ code {
     }
 }
 
+@media print {
+    @page { margin: 14mm; }
+    body { background: #FFFFFF !important; }
+    header, nav, .print\:hidden { display: none !important; }
+    [data-testid="financial-planner"] { background: #FFFFFF !important; }
+    .shadow, .shadow-sm, .shadow-lg, .shadow-xl, .shadow-2xl { box-shadow: none !important; }
+    a { color: inherit; text-decoration: none; }
+}
+
 @layer base {
     [data-debug-wrapper="true"] {
         display: contents !important;

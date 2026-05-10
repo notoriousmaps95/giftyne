@@ -17,7 +17,7 @@ import Footer from "@/components/Footer";
 import LiveNotification from "@/components/LiveNotification";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductPage from "@/components/ProductPage";
-import FinancialPlanner from "@/components/FinancialPlanner";
+import FinancialPlanner from "@/components/planner/FinancialPlanner";
 
 const Home = () => {
   return (
