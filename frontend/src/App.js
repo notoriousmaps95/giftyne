@@ -17,6 +17,7 @@ import Footer from "@/components/Footer";
 import LiveNotification from "@/components/LiveNotification";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import ProductPage from "@/components/ProductPage";
+import FinancialPlanner from "@/components/FinancialPlanner";
 
 const Home = () => {
   return (
@@ -48,6 +49,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/product/:slug" element={<ProductPage />} />
+          <Route path="/planner" element={<FinancialPlanner />} />
         </Routes>
       </BrowserRouter>
     </div>
