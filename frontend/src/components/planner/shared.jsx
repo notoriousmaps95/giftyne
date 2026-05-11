@@ -69,38 +69,6 @@ export const PrimaryButton = ({ children, className = "", ...props }) => (
   </button>
 );
 
-export const GhostButton = ({ children, className = "", ...props }) => (
-  <button
-    className={`font-body text-sm font-medium text-giftyne-text/65 hover:text-giftyne-terra px-4 py-2 rounded-full border border-giftyne-sand/60 hover:border-giftyne-terra/40 transition-colors inline-flex items-center gap-1.5 ${className}`}
-    {...props}
-  >
-    {children}
-  </button>
-);
-
-export const TextInput = React.forwardRef(({ className = "", icon: Icon, ...props }, ref) => (
-  <div className="relative">
-    {Icon && (
-      <Icon size={16} className="absolute left-3 top-1/2 -translate-y-1/2 text-giftyne-text/35" />
-    )}
-    <input
-      ref={ref}
-      className={`w-full ${Icon ? "pl-9" : "pl-3"} pr-3 py-2.5 rounded-full border border-giftyne-sand/60 bg-white font-body text-sm text-giftyne-text placeholder:text-giftyne-text/35 focus:outline-none focus:ring-2 focus:ring-giftyne-terra/30 ${className}`}
-      {...props}
-    />
-  </div>
-));
-TextInput.displayName = "TextInput";
-
-export const Select = ({ children, className = "", ...props }) => (
-  <select
-    className={`w-full px-3 py-2.5 rounded-full border border-giftyne-sand/60 bg-white font-body text-sm text-giftyne-text focus:outline-none focus:ring-2 focus:ring-giftyne-terra/30 ${className}`}
-    {...props}
-  >
-    {children}
-  </select>
-);
-
 export const Empty = ({ icon: Icon, title, description, action }) => (
   <div className="text-center py-12">
     {Icon && (
